@@ -1,0 +1,17 @@
+{
+
+    "name": "Music Visualizer",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "A music visualizer for any source",
+
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "permissions": [
+        "https://ajax.googleapis.com/",
+        "desktopCapture"
+    ]
+}
