@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Music Visualizer</title>
-    </head>
-    <style media="screen">
-    video {
-        width: 640px;
-        height: 480px;
-        background: rgba(0,0,0,0.25);
-    }
-    </style>
-    <body>
-        <video autoplay></video>
-        <p><button>Enable Capture</button></p>
-        <script src="app.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Music Visualizer</title>
+</head>
+<style media="screen">
+canvas,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#toggle{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+#toggle:hover{
+    opacity: 1;
+}
+
+</style>
+
+<body>
+    <canvas id="canvas" width="1920" height="1080"></canvas>
+    <p id="toggle"><button>Toggle Recording</button></p>
+    <script src="jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+</body>
 </html>
