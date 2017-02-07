@@ -36,10 +36,10 @@ function onApproved(streamId){
             mandatory: {
                 chromeMediaSource: 'desktop',
                 chromeMediaSourceId: streamId,
-                minWidth: 1280,
-                maxWidth: 1280,
-                minHeight: 720,
-                maxHeight: 720
+                minWidth: 1,
+                maxWidth: 1,
+                minHeight: 1,
+                maxHeight: 1
             }
         }
     }, getStream, getError);
@@ -68,7 +68,6 @@ function onApproved(streamId){
         function draw() {
             var WIDTH= canvas.width;
             var HEIGHT = canvas.height;
-            console.log("draw");
             drawVisual = requestAnimationFrame(draw);
 
             analyser.getByteFrequencyData(dataArray);
