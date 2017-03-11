@@ -8,7 +8,7 @@
 canvas,body{
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100% !important;
 }
 #toggle{
     position: absolute;
@@ -23,8 +23,9 @@ canvas,body{
 </style>
 
 <body>
-    <canvas id="canvas" width="1920" height="1080"></canvas>
     <p id="toggle"><button>Toggle Recording</button></p>
+    
+    <script src="three.min.js" charset="utf-8"></script>
     <script src="jquery-3.1.1.min.js" charset="utf-8"></script>
     <script src="app.js"></script>
 </body>
